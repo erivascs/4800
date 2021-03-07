@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, BrowserRouter } from "react-router-dom";
 import Login from "./Login";
+import Home from "./Home";
 
 class App extends Component {
   constructor(props) {
@@ -14,23 +15,21 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <>
-        <Router>
-          <Navbar />
-          <Login />
-          <Switch>
-            <Route path="/" exact />
-            <div className="app">
-              {this.state.loginPage}
-              {this.state.uploadScreen}
-            </div>
+    return (   
+      <BrowserRouter>
+      <Navbar />  
+       <div>
+           <Switch>
+            <Route path="/" component={Login} exact/>
+            <Route path="/Home" component={Home}/>
+           <Route component={Error}/>
           </Switch>
-        </Router>
-      </>
-    );
+       </div> 
+     </BrowserRouter>
+   );
   }
 }
+
 
 const style = {
   margin: 15

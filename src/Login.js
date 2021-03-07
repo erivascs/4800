@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 import { getByPlaceholderText } from "@testing-library/react";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -60,7 +61,7 @@ class Login extends Component {
         <div>
           <h1 className="body">New to Growceries? Sign up here</h1>
         </div>
-        <Button variant="contained" color="primary" style={style}>
+        <Button component={Link} to="/Home" variant="contained" color="primary" style={style}>
           Sign up
         </Button>
       </ThemeProvider>
