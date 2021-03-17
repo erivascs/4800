@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Stores from "./components/Stores";
-
+import Footer from "./components/Footer";
 
 class App extends Component {
     constructor(props) {
@@ -17,17 +17,22 @@ class App extends Component {
 
     render() {
         return (
-            <Router>
-                <div>
-                    <Switch>
-                        <Route exact path="/" component={Login} exact />
-                        <Route exact path="/Stores" component={Stores} />
-                        <Route exact path="/Signup" component={Signup} />
-                        <Route navigate="/data" />
-                        <Route exact component={Error} />
-                    </Switch>
+            <div className="page-container">
+                <Router>
+                <div className="content-wrap">
+                    <div>
+                        <Switch>
+                            <Route exact path="/" component={Login} exact />
+                            <Route exact path="/Stores" component={Stores} />
+                            <Route exact path="/Signup" component={Signup} />
+                            <Route navigate="/data" />
+                            <Route exact component={Error} />
+                        </Switch>
+                    </div>
                 </div>
-            </Router>
+                <Footer />
+                </Router>
+            </div>
         );
     }
 }

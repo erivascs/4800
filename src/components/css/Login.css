@@ -50,7 +50,7 @@
   right: 50%;
   position: absolute;
   z-index: -1;
-  opacity: .50;
+  opacity: 0.5;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -102,48 +102,28 @@
   flex: 1;
 }
 
-.localStoresHeading{
+.localStoresHeading {
   font-family: Merriweather-Regular;
   font-weight: 700;
   margin-top: 40%;
 }
 
-.localStoresBody{
+.localStoresBody {
   font-family: Arial;
-  margin-top: 3%;
-  padding-bottom: 300px;
+  margin-top: 1%;
+  padding-bottom: 100px;
 }
 
-.driversHeading{
+.driversHeading {
   font-family: Merriweather-Regular;
   font-weight: 700;
   margin-top: 40%;
 }
 
-.driversBody{
+.driversBody {
   font-family: Arial;
-  margin-top: 3%;
-  padding-bottom: 300px;
-
-}
-
-.rightColumn3::after {
-  content: "";
-  background: url("../images/cartoondelivery.jpg");
-  top: 40%;
-  left: 50%;
-  bottom: -60%;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  opacity: 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: calc(100vh-60px);
-  width: auto;
-  margin-top: 40%;
-
+  margin-top: 1%;
+  padding-bottom: 0px;
 }
 
 .signInFields {

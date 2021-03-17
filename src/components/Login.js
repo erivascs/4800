@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from './Navbar';
 import {
     createMuiTheme,
     ThemeProvider,
@@ -7,7 +8,8 @@ import {
 } from "@material-ui/core";
 import "./css/Login.css";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+import Img from "./images/GroceryStore.jpg";
+import Img2 from "./images/cartoondelivery.jpg";
 
 const theme = createMuiTheme({
     palette: {
@@ -141,7 +143,7 @@ class Login extends Component {
                                 Shopping local helps local businesses and it also means your groceries
                                 arrive in a timely manner.
                             </div>
-                            
+                                <img src={Img} alt="groceryStore" width="auto" height="150"/>
                         </div>
                     </div>
                     <div className="rightColumn3">
@@ -151,6 +153,7 @@ class Login extends Component {
                         <div className="driversBody">
                             Our delivery drivers are carefully selected in order to ensure great service.
                         </div>
+                        <img src={Img2} alt="deliverydriver" width="auto" height="150"/>
                     </div>
                 </div>
             </div>
