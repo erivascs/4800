@@ -9,30 +9,35 @@ const Footer = () => {
                 <div className="row">
                     {/*Column 1 */}
                     <div className="column">
-                        <h4>Column 1</h4>
+                        <h4>Top Grocery Stores</h4>
                         <ul className="list">
-                        <li><Link to ="/" className="link">link</Link></li>
-                        <li><Link to ="/" className="link">link</Link></li>
-                        <li><Link to ="/" className="link">link</Link></li>
+                            <li><Link to="/" className="link">Walmart</Link></li>
+                            <li><Link to="/" className="link">Ralphs</Link></li>
+                            <li><Link to="/" className="link">Food4Less</Link></li>
                         </ul>
                     </div>
                     {/*Column 2 */}
                     <div className="column">
-                        <h4>Column 2</h4>
-                        <ul className="list">
-                        <li><Link to ="/" className="link">link</Link></li>
-                        <li><Link to ="/" className="link">link</Link></li>
-                        <li><Link to ="/" className="link">link</Link></li>
+                        <h4>Get to Know Us</h4>
+                        <ul className="list2">
+                            <li><Link to="/" className="link">About Us</Link></li>
+                            <li><Link to="/" className="link">Careers</Link></li>
+                            <li><Link to="/" className="link">Blog</Link></li>
                         </ul>
                     </div>
                     {/*Column 3 */}
                     <div className="column">
-                        <h4>Column 3</h4>
-                        <ul className="list">
-                        <li><Link to ="/" className="link">link</Link></li>
-                        <li><Link to ="/" className="link">link</Link></li>
-                        <li><Link to ="/" className="link">link</Link></li>
+                        <h4>More Options</h4>
+                        <ul className="list3">
+                            <li><Link to="/" className="link">FAQs</Link></li>
+                            <li><Link to="/" className="link">Gift Cards</Link></li>
                         </ul>
+                    </div>
+                    {/*Column 4 */}
+                    <div className="column">
+                        <h4>Mobile App</h4>
+                        <div className="googlePlay"></div>
+                        <div className="appStore"></div>
                     </div>
                 </div>
                 <hr />

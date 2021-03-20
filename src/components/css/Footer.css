@@ -9,6 +9,26 @@
 }
 
 .column {
-  padding-left: 13%;
-  padding-right: 13%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 20px;
+}
+
+.googlePlay {
+  background-image: url("../images/google-play-badge-128x128.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300%;
+  height: 150px;
+  margin-top: -50%;
+}
+
+.appStore {
+  background-image: url("../images/AppStoreIcon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300%;
+  height: 150px;
+  margin-top: -100%;
+  margin-bottom: -50%;
 }
