@@ -3,6 +3,10 @@ import React, { Component } from 'react'
 import AuthenticationService from './Authentication';
 import "./css/Profile.css"
 import Header from './Header';
+import Img from './images/profile_picture.jpeg'
+import Address from './Address'
+
+
 export class Profile extends Component {
     constructor(props) {
         super(props);
@@ -22,6 +26,7 @@ export class Profile extends Component {
     //     }
     // }
 
+
     render() {
         return (
             <div>
@@ -30,11 +35,12 @@ export class Profile extends Component {
                     <div className="profile__header">This is profile Dashboard</div>
                     <div className="profile__body">
                         <div className="profile__columnLeft">
-                            <div className="profile__image"></div>
-                            <div className="profile__text">My profile</div>
-                            <div className="profile__text">My profile</div>
+                            <div className="profile__image"><img src={Img} /></div>
+                            <div className="profile__text">Name: </div> {this.state.name}Name
+                            <div className="profile__text">Email Address:</div> {this.state.email}email
                         </div>
                         <div className="profile__columnRight">
+                            <Address />
                             <div className="profile_smallBlock"></div>
                             <div className="profile_smallBlock"></div>
                         </div>

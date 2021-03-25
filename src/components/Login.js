@@ -172,7 +172,9 @@ class Login extends Component {
                 Shopping local helps local businesses and it also means your groceries
                 arrive in a timely manner.
               </div>
-              <img src={Img} alt="groceryStore" width="500" height="500" />
+              <div className="storeImg">
+                <img src={Img} alt="groceryStore" />
+              </div>
             </div>
           </div>
           <div className="rightColumn3">
@@ -182,7 +184,9 @@ class Login extends Component {
             <div className="driversBody">
               Our delivery drivers are carefully selected in order to ensure great service.
             </div>
-              <img src={Img2} alt="deliverydriver" width= "500" height= "500" />
+              <div className="driverImg">
+                <img src={Img2} alt="deliverydriver"/>
+              </div>
           </div>
         </div>
       </div>

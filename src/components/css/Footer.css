@@ -2,7 +2,7 @@
   color: white;
   background-color: rgb(6, 193, 103);
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -51,4 +51,68 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+
+.column2 {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 20px;
+}
+
+.icons {
+  position: relative;
+  bottom: 25px;
+  right: 10%;
+}
+.instagram img {
+  /*background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  height: 3%;
+  width: 3%;
+  float: right;
+}
+
+.twitter img {
+  /*background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  height: 3%;
+  width: 3%;
+  float: right;
+}
+
+.facebook img {
+  /*background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  height: 3%;
+  width: 3%;
+  float: right;
+}
+
+.youtube img {
+  /*background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  height: 3%;
+  width: 3%;
+  float: right;
+}
+
+.linkedin img {
+  /*background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  height: 3%;
+  width: 3%;
+  float: right;
+}
+.pinterest img {
+  /*background-color: white;*/
+  display: flex;
+  flex-direction: column;
+  height: 3%;
+  width: 3%;
+  float: right;
 }

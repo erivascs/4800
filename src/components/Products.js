@@ -39,6 +39,7 @@ class Product extends Component {
             return (
                 <div>
                     <Header />
+                    <div className="title"><h2>Food</h2></div>
                     <div className="product__body">
                         {products.map((product) => (
                             <ul>
@@ -56,6 +57,9 @@ class Product extends Component {
                                         <div className="product__info">
                                             In stock: {product.quantity}
                                         </div>
+                                    </div>
+                                    <div className="product__add">
+                                        <button onclick={product.addtocart}>Add to Cart</button>
                                     </div>
                                 </div>
                             </ul>

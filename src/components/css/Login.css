@@ -144,3 +144,19 @@
   margin-left: 20px;
   margin-top: 10px;
 }
+
+.driverImg img {
+  padding-top: 20px;
+  height: 300px;
+  max-height: 200%;
+  width: auto;
+  max-width: 200%;
+}
+
+.storeImg img {
+  padding-top: 20px;
+  height: 300px;
+  max-height: 200%;
+  width: auto;
+  max-width: 200%;
+}
